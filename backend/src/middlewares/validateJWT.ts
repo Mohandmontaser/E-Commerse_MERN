@@ -7,7 +7,7 @@ const validateJWT = (req: ExtendRequest, res: Response, next: NextFunction) => {
   const authorizationHeader = req.get("authorization");
 
   if (!authorizationHeader) {
-    res.status(403).send("Authorization header was not provided");
+    res.status(403).send("Authorization header was not provided"); 
     return;
   }
 
